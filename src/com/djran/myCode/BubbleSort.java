@@ -1,6 +1,6 @@
 package com.djran.myCode;
 /**
- * 测试字符编码
+ * 测试字符编码,IDEA测试
  * @author djran 2016年12月29日 下午2:02:20
  *
  */
