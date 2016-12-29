@@ -1,7 +1,7 @@
 package com.djran.myCode;
 /**
- * Ã°ÅİÅÅĞò
- * @author djran 2016Äê12ÔÂ29ÈÕ ÏÂÎç1:54:06
+ * æµ‹è¯•å­—ç¬¦ç¼–ç 
+ * @author djran 2016å¹´12æœˆ29æ—¥ ä¸‹åˆ2:02:20
  *
  */
 public class BubbleSort {
