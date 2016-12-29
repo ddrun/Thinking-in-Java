@@ -1,5 +1,9 @@
 package com.djran.myCode;
-
+/**
+ * 冒泡排序
+ * @author djran 2016年12月29日 下午1:54:06
+ *
+ */
 public class BubbleSort {
 		
 	public void printNum(int[] num) {
