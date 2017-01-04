@@ -27,6 +27,7 @@ public class Flower {
         System.out.println("default constructor: no args");
     }
     void printPetalCount(){
+        //this(88); 错误，除构造器外，编译器禁止在其他任何方法中调用构造器
         System.out.println("petalCount="+petalCount+" type="+type);
     }
     public static void main(String[] args){
