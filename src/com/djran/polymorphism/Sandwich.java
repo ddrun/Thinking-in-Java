@@ -1,7 +1,5 @@
 package com.djran.polymorphism;
 
-import com.djran.commonUtils.Print;
-
 import static com.djran.commonUtils.Print.print;
 
 /**
