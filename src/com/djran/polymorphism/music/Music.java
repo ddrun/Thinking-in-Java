@@ -23,3 +23,12 @@ public class Music {
         tuneAll(band);
     }
 }
+
+/**
+ * 输出结果如下：
+ Wind.play() MIDDLE_C
+ Percussion.play() MIDDLE_C
+ Stringed.play() MIDDLE_C
+ Woodwind play() MIDDLE_C
+ Brass play() MIDDLE_C
+ */
