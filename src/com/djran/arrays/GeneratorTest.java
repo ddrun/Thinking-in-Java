@@ -1,0 +1,44 @@
+package com.djran.arrays;
+
+import com.djran.commonUtils.CountingGenerator;
+import com.djran.commonUtils.Generator;
+
+/**
+ * Created by d.djran@gmail.com on 2017-03-01.
+ */
+public class GeneratorTest {
+    public static int size=10;
+    public static void test(Class<?> surroundingClass){
+        //反射方法getClasses可以生成所有的嵌套类
+        for(Class<?> type : surroundingClass.getClasses()){
+            System.out.print(type.getSimpleName()+": ");
+            try {
+                Generator<?> generator=(Generator<?>) type.newInstance();
+                for (int i=0;i<size;i++){
+                    System.out.print(generator.next()+" ");
+                }
+                System.out.println();
+            }catch (Exception e){
+                throw  new RuntimeException(e);
+            }
+        }
+    }
+
+    public static void main(String [] args){
+        test(CountingGenerator.class);
+    }
+
+}
+
+/**
+ * 输出结果：
+ Double: 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0
+ Float: 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0
+ Long: 0 1 2 3 4 5 6 7 8 9
+ Integer: 0 1 2 3 4 5 6 7 8 9
+ Short: 0 1 2 3 4 5 6 7 8 9
+ String: abcdefg hijklmn opqrstu vwxyzAB CDEFGHI JKLMNOP QRSTUVW XYZabcd efghijk lmnopqr
+ Character: a b c d e f g h i j
+ Byte: 0 1 2 3 4 5 6 7 8 9
+ Boolean: true false true false true false true false true false
+ */
